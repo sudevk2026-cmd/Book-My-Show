@@ -24,7 +24,6 @@ ENV NODE_OPTIONS=--openssl-legacy-provider
 ENV PORT=3000
 ENV HOST=0.0.0.0
 
-# Start the application
-RUN npm install chokidar --legacy-peer-deps
+RUN npm install chokidar@3.5.3 watchpack-chokidar2 --legacy-peer-deps
 
 CMD ["npm", "start"]
