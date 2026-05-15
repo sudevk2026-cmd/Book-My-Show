@@ -25,4 +25,4 @@ ENV PORT=3000
 
 # Start the application
 RUN npm install
-RUN npm install chokidar watchpack-chokidar2 --legacy-peer-deps
+RUN npm install chokidar --legacy-peer-deps
